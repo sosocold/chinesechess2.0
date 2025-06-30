@@ -1,6 +1,8 @@
-// ... (保留原有的 DOM 元素獲取, 棋盤 Canvas 繪製等代碼) ...
+// 獲取 DOM 元素
+const currentTurnDisplay = document.getElementById('current-turn');
+const chessboardContainer = document.getElementById('chessboard-container');
+const resetButton = document.getElementById('reset-button'); // <-- 把這行加在這裡
 
-// 注意：pieceMap 不變，用於顯示棋子文字
 
 // 定義後端服務的基礎 URL
 const BACKEND_BASE_URL = 'http://sosocold.pythonanywhere.com'; 
